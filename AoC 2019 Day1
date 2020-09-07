@@ -5,12 +5,12 @@ with open("Day1_input.txt", "r") as f:
 fuel = sum((y // 3 - 2) for y in modules)
 print(fuel)
 #3390596
-#holy shit
+
 
 #part2: loop through the same as part 1 until the result for each line is 0.
 #define a variable
 total = 0
-#overwrite y with result you big dummy. 
+ 
 for y in modules:
   while y > 0:
     y = (y // 3 - 2)
@@ -18,7 +18,7 @@ for y in modules:
       total += y
     else:
         break
-    #check for idiocy    
+    #check for error    
     print(total)
           
 print(total)
