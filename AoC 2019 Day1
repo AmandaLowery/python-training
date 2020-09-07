@@ -1,0 +1,24 @@
+#open input as list of ints
+with open("Day1_input.txt", "r") as f:
+	modules = [int(x) for x in f.readlines()]                  
+#part 1: divide(floor) each int by three, -2. add all
+fuel = sum((y // 3 - 2) for y in modules)
+print(fuel)
+#3390596
+#holy shit
+
+#part2: loop through the same as part 1 until the result for each line is 0.
+#define a variable
+total = 0
+#overwrite y with result you big dummy. 
+for y in modules:
+  while y > 0:
+    y = (y // 3 - 2)
+    if y > 0:
+      total += y
+    else:
+        break
+    #check for idiocy    
+    print(total)
+          
+print(total)
